@@ -1,0 +1,215 @@
+// Place all the styles related to the info controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/*---------------MAIN-----------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  list-style-type:none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  background-color: rgb(227, 242, 231);
+  background: -webkit-gradient(linear, left, top, left bottom, from(rgb(227,242,231)), to(rgb(227, 242, 231))) ;
+}
+
+.inaug { 
+  background-color: #fff;
+  background: url(/images/lincoln.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+}
+
+@font-face {
+  font-family: 'SF Speakeasy';
+  src: url('SFSpeakeasy.ttf');
+}
+
+h1#logo {
+  font-family:"SF Speakeasy", Helvetica, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, "Times New Roman", serif;
+  font-size:44pt;
+  color: #1C031E;
+}
+
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  margin: 0px;
+  font-family:Helvetica, sans-serif;
+}
+
+.clearfix:after {
+   content: ".";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+#wrapper {
+  right: 0;
+  left: 0;
+  position: relative;
+  padding: 0;
+  /*  background-color: rgb(227, 242, 231);*/
+}
+
+.home-bg {
+}
+
+h1 {
+  font-size:20pt;
+}
+
+h2 {
+  font-size:15pt;
+}
+
+h3 {
+  font-size:14pt;
+}
+
+h4 {
+  font-size:12pt;
+}
+
+h5 {
+  font-size: 9pt;
+  font-face:bold;
+  margin:0;
+  padding-top:7px;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+.italics { font-style: italic; }
+
+
+/*--------HEADER/FOOTER--------*/
+
+#header, #footer {
+  width:100%;
+}
+
+#header {
+  height: 70px;
+  background-color: #1B1B1F;
+}
+
+#logo {
+  padding: 8px 0 0 25px;
+}
+
+#logo a {
+  color: #D6AA0B;
+}
+
+
+/*---------CONTAINER-----------*/
+
+.room-info, .lobby, .chat-room {
+  height: 850px;
+  position: relative;
+  float: left;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+#chats, #chat_entry {
+  padding:20px;
+}
+
+#chats {
+  height: 800px;
+  overflow-y: scroll;
+}
+
+#chat_entry {
+  overflow: hidden;
+}
+
+#chat_entry textarea {
+  width: 90%;
+  height:50px;
+  font-size: 16px;
+  padding: 8px;
+}
+
+.lobby, .room-info {
+  padding: 0 20px;
+}
+
+.chat-room { 
+  width: 1050px;
+  background-color: #fff;
+  overflow-y: scroll;
+  background: url("https://www.simple.com/img/bg_pixel_texture.gif") repeat;
+}
+
+.lobby, .room-info { 
+  width: 280px;
+  background-color: #4F2D2D;
+}
+
+.lobby {
+  padding-right: 15px;
+}
+
+.room-info {
+  padding-left: 15px;
+}
+
+.container {
+  
+}
+
+.group:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
+* html .group             { zoom: 1; } /* IE6 */
+
+*:first-child+html .group { zoom: 1; } /* IE7 */
