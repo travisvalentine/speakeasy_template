@@ -1,16 +1,43 @@
-<% content_for(:head) do %>
-  <script type="text/javascript">
+<%# content_for(:head) do %>
+  <!-- ><script type="text/javascript">
     $(function(){
       $('.container').addClass('group');
     });
-  </script>
-<% end %>
+  </script>< -->
+<%# end %>
 <div class="chat-room">
+  <%= render 'layouts/lobby' %>
   <div id="chats">
-  <h1>Info#home</h1>
-  <p>Find me in app/views/info/home.html.erb</p>
+    <ul>
+      <li><span class="author">Nisarg Shah:</span>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+    </ul>
   </div>
-  <div id="chat_entry">
-    <textarea placeholder="Enter a chat"></textarea>
-  </div>
+  <%= render 'layouts/room_info' %>
+</div>
+<div id="chat_entry">
+  <textarea placeholder="Enter a chat..." autofocus="true"></textarea>
+  <input type="submit" value="Enter" class="btn"></input>
 </div>
