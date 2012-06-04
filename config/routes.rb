@@ -1,4 +1,7 @@
 Template::Application.routes.draw do
+  get "info/home"
+  root :to => "info#home"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

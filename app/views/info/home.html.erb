@@ -1,0 +1,43 @@
+<%# content_for(:head) do %>
+  <!-- ><script type="text/javascript">
+    $(function(){
+      $('.container').addClass('group');
+    });
+  </script>< -->
+<%# end %>
+<div class="chat-room">
+  <%= render 'layouts/lobby' %>
+  <div id="chats">
+    <ul>
+      <li><span class="author">Nisarg Shah:</span>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+      <li>Chat text</li>
+    </ul>
+  </div>
+  <%= render 'layouts/room_info' %>
+</div>
+<div id="chat_entry">
+  <textarea placeholder="Enter a chat..." autofocus="true"></textarea>
+  <input type="submit" value="Enter" class="btn"></input>
+</div>
