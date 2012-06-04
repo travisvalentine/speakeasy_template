@@ -1,10 +1,16 @@
-<%# content_for(:head) do %>
-  <!-- ><script type="text/javascript">
+<% content_for(:head) do %>
+  <script type="text/javascript">
     $(function(){
-      $('.container').addClass('group');
+      $('#chats').animate({scrollTop: $(document).height()}, 'fast');
     });
-  </script>< -->
-<%# end %>
+    $(function(){
+      $('#scroll').click(function() {
+        $('#chats').animate({scrollTop: $(document).height()}, 'fast');
+        return false
+      });      
+    });
+  </script>
+<% end %>
 <div class="chat-room">
   <%= render 'layouts/lobby' %>
   <div id="chats">
@@ -39,5 +45,5 @@
 </div>
 <div id="chat_entry">
   <textarea placeholder="Enter a chat..." autofocus="true"></textarea>
-  <input type="submit" value="Enter" class="btn"></input>
+  <input type="submit" value="Enter" class="btn" id="scroll"></input>
 </div>
